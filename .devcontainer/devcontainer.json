@@ -2,5 +2,5 @@
 	"name": "PHP",
 	"image": "mcr.microsoft.com/devcontainers/php:1-8.2-bullseye",
 	"forwardPorts": [8080],
-	"postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html && service apache2 start"
+	"postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html && sudo service apache2 start"
 }
